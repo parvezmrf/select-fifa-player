@@ -4,7 +4,7 @@ function getInputValueById(elementId) {
     const inputValueString = getElementId.value;
     const inputValue = parseFloat(inputValueString);
 
-    return inputValue
+    return inputValue;
 }
 
 
