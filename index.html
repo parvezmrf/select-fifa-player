@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- tailwind css and daisyui css link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Players on your Budget</title>
 </head>
 
 <body>
+
+    <!-- heder section  -->
     <header class="bg-black my-10">
         <div class="py-10 flex items-center ">
             <div class="basis-1/4">
@@ -31,19 +35,16 @@
     </header>
 
     <main>
+
+        <!-- main section stars -->
         <section class="w-10/12 my-8 mx-auto">
 
 
             <div class="grid grid-cols-3 gap-4">
+                <!-- first col -->
                 <div class="bg-red-200 col-span-2 p-2">
 
-
                     <div class="grid grid-cols-3 gap-2">
-
-
-
-
-
 
 
                         <div class="card w-62 h-96 bg-base-100 border rounded">
@@ -60,10 +61,6 @@
                         </div>
 
 
-
-
-
-
                         <div class="card w-62 h-96 bg-base-100 border rounded">
                             <figure class="px-10">
                                 <img src="img/hd.png" alt="Shoes" class="rounded-xl w-48" />
@@ -78,9 +75,6 @@
                         </div>
 
 
-
-
-
                         <div class="card w-62 h-96 bg-base-100 border rounded">
                             <figure class="px-10">
                                 <img src="img/hd.png" alt="Shoes" class="rounded-xl w-48" />
@@ -93,18 +87,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,7 +98,7 @@
 
                 </div>
 
-
+                <!-- second col  -->
                 <div class="bg-red-400">
 
                     <section class="grid grid-cols-1">
@@ -137,41 +119,48 @@
 
 
 
-                        <div class="text-center  bg-blue-100 h-96">
+                        <div class="text-center  bg-blue-100 h-auto">
                             <h1 class="text-2xl font-semibold py-5"> Budget</h1>
 
-                            <label> Players <input type="text"> </label>
-                            <br>
-                            <br>
 
-                            <button class="btn btn-primary rounded-none w-48 ">Calculate</button>
+                            <div class="input-section pb-6">
+                                <label class="font-bold text-xl"> Players <input id="player-budget"
+                                        class="w-48 bg-white border border-blue-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
+                                        type="text"> </label>
 
-                            <h1 class="text-xl font-semibold py-3">Player Expenses $5000</h1>
-
-                            <label> Manager <input type="text"> </label>
-                            <br>
-                            <br>
-
-                            <label> Coach <input type="text"> </label>
-                            <br><br>
-
-                            <button class="btn btn-primary rounded-none w-48 ">Calculate Total</button>
-
-                            <h1 class="text-xl font-semibold py-3">Total $5000</h1>
+                            </div>
 
 
+                            <button id="btn-calculate" class="btn btn-primary rounded-none w-[280px]">Calculate</button>
+
+                            <h1 class="text-xl font-semibold py-3">Player Expenses $<span id="player-exp">0</span></h1>
+
+                            <div class="input-section mt-5">
+
+                                <label class="font-bold text-xl"> Manager <input id="exp-manager"
+                                        class="w-48 bg-white border border-blue-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
+                                        type="text">
+                                </label>
+
+                            </div>
 
 
+                            <div class="input-section">
+
+                                <label class="font-bold text-xl"> Coach <input id="exp-coach"
+                                        class="w-48 bg-white border border-blue-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
+                                        type="text"> </label>
+
+                            </div>
 
 
+                            <button id="calculate-total" class="btn btn-primary rounded-none w-[280px] ">Calculate
+                                Total</button>
 
+                            <h1 class="text-xl font-semibold py-3">Total $<span id="total-exp">0</span></h1>
 
 
                         </div>
-
-
-
-
 
 
 
@@ -194,7 +183,8 @@
 
 
 
-
+    <script src="js/common.js"></script>
+    <script src="js/operation.js"></script>
 
 </body>
 
