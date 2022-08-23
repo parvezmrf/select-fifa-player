@@ -25,3 +25,8 @@ function getText(elementId) {
 
     return getIdString;
 }
+
+
+const button = document.querySelectorAll('button');
+button.disabled = true;
+
