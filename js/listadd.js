@@ -1,14 +1,7 @@
 
-
-
-
-
 const playerArray = [];
 
-
-
 function display(cartPlayer) {
-
 
     const selectPlayer = document.getElementById('cart-players');
     selectPlayer.innerHTML = '';

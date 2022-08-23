@@ -25,4 +25,3 @@ function getText(elementId) {
 
     return getIdString;
 }
-
