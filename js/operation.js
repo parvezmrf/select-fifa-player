@@ -2,7 +2,10 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     // for Budget Calculate 
     const playerBudegt = getInputValueById('player-budget');
     const expenseText = getText('player-exp');
-    const expenseTextTotal = playerBudegt * 5;
+    const totalSelectedPlayer = document.getElementById('total-added-players');
+    const totalSelectedPlayerString = totalSelectedPlayer.innerText;
+    const totalSelected = parseFloat(totalSelectedPlayerString);
+    const expenseTextTotal = playerBudegt * totalSelected;
 
     // NaN checker
     if (isNaN(expenseTextTotal)) {

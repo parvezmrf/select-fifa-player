@@ -1,5 +1,4 @@
-const cartArray = [];
-
+const playerArray = [];
 
 
 function display(cartPlayer) {
@@ -26,26 +25,22 @@ function display(cartPlayer) {
 }
 
 
-
 function addToCart(element) {
 
-    //    console.log(element.parentNode.parentNode.children);
-    //    console.log(element.parentNode.parentNode.children[0].innerText);
-    //    console.log(element.parentNode.parentNode.children[1].innerText);
-
     const playerName = element.parentNode.parentNode.children[0].innerText;
-
-    //    console.log(playerName);
 
     const playerObj = {
         playerName: playerName
     }
 
-    cartArray.push(playerObj);
 
-    //     console.log(cartArray);
-    //     console.log(cartArray.length);
-    document.getElementById('total-added-players').innerText = cartArray.length;
+    playerArray.push(playerObj);
+    if (playerArray.length > 5) {
+        alert('You can not select more than 5 players');
+        return;
+    }
 
-    display(cartArray);
+    document.getElementById('total-added-players').innerText = playerArray.length;
+
+    display(playerArray);
 }
