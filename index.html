@@ -54,10 +54,11 @@
                                 <img src="img/2.png" alt="messi" />
                             </figure>
                             <div class="card-body p-5 items-center text-center">
-                                <h2 class="card-title">Leonel Messi!</h2>
+                                <h2 class="card-title">Leonel Messi 1!</h2>
                                 <p>Click the button for hire now</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary rounded px-12">Select</button>
+                                    <button class="btn btn-primary rounded px-12" onclick="addToCart(this)">Select
+                                        1</button>
                                 </div>
                             </div>
                         </div>
@@ -69,10 +70,11 @@
                                 <img src="img/2.png" alt="messi" />
                             </figure>
                             <div class="card-body p-5 items-center text-center">
-                                <h2 class="card-title">Leonel Messi!</h2>
+                                <h2 class="card-title">Leonel Messi 2!</h2>
                                 <p>Click the button for hire now</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary rounded px-12">Select</button>
+                                    <button class="btn btn-primary rounded px-12" onclick="addToCart(this)">Select
+                                        2</button>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +86,11 @@
                                 <img src="img/2.png" alt="messi" />
                             </figure>
                             <div class="card-body p-5 items-center text-center">
-                                <h2 class="card-title">Leonel Messi!</h2>
+                                <h2 class="card-title">Leonel Messi 3!</h2>
                                 <p>Click the button for hire now</p>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary rounded px-12">Select</button>
+                                    <button class="btn btn-primary rounded px-12" onclick="addToCart(this)">Select
+                                        3</button>
                                 </div>
                             </div>
                         </div>
@@ -110,15 +113,19 @@
                     <section class="grid grid-cols-1">
 
                         <div class="text-center  bg-blue-200 h-96">
-                            <h1 class="text-2xl font-semibold py-5"> Selected Players</h1>
-                            <ul class="list-decimal font-semibold text-left px-10">
-                                <li> mmm</li>
-                                <li> nnn</li>
-                                <li> nnn</li>
-                                <li> nnn</li>
-                                <li> nnn</li>
+                            <h1 class="text-2xl font-bold py-5"> Selected Players <span
+                                    id="total-added-players">0</span>
+                            </h1>
 
-                            </ul>
+                            <div class="selected-list">
+                                <ul id="cart-players" class="list-decimal font-semibold text-left px-10">
+                                    <p>
+                                        Selected player will be show here.
+                                    </p>
+
+                                </ul>
+
+                            </div>
                         </div>
 
 
@@ -174,10 +181,6 @@
 
                 </div>
 
-
-
-
-
         </section>
 
 
@@ -191,6 +194,8 @@
 
     <script src="js/common.js"></script>
     <script src="js/operation.js"></script>
+    <script src="js/listadd.js"></script>
+
 
 </body>
 
