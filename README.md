@@ -1,2 +1,2 @@
-# select-fifa-player
-Live site link https://parvezmrf-assignment5.netlify.app/
+# select-FIFA-player
+Live site link https://select-fifa-player.netlify.app/
